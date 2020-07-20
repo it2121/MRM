@@ -1,0 +1,115 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 480104 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=3704, tid=0x00000000000027ec
+#
+# JRE version:  (8.0_131-b11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.131-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000001ece800):  JavaThread "Unknown thread" [_thread_in_vm, id=10220, stack(0x0000000002110000,0x0000000002210000)]
+
+Stack: [0x0000000002110000,0x0000000002210000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000001ece800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=10220, stack(0x0000000002110000,0x0000000002210000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x000000013fc80000 - 0x000000013fcb7000 	C:\Program Files\Java\jre1.8.0_131\bin\javaw.exe
+0x0000000077a70000 - 0x0000000077c1a000 	C:\windows\SYSTEM32\ntdll.dll
+0x0000000077850000 - 0x000000007796f000 	C:\windows\system32\kernel32.dll
+0x000007fefd960000 - 0x000007fefd9ca000 	C:\windows\system32\KERNELBASE.dll
+0x000007feff8c0000 - 0x000007feff99b000 	C:\windows\system32\ADVAPI32.dll
+0x000007feffce0000 - 0x000007feffd7f000 	C:\windows\system32\msvcrt.dll
+0x000007fefdc10000 - 0x000007fefdc2f000 	C:\windows\SYSTEM32\sechost.dll
+0x000007fefdcb0000 - 0x000007fefdddd000 	C:\windows\system32\RPCRT4.dll
+0x0000000077970000 - 0x0000000077a6a000 	C:\windows\system32\USER32.dll
+0x000007feff720000 - 0x000007feff787000 	C:\windows\system32\GDI32.dll
+0x000007feff710000 - 0x000007feff71e000 	C:\windows\system32\LPK.dll
+0x000007fefdb20000 - 0x000007fefdbea000 	C:\windows\system32\USP10.dll
+0x000007fefc000000 - 0x000007fefc1f4000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007fefdde0000 - 0x000007fefde51000 	C:\windows\system32\SHLWAPI.dll
+0x000007fefe370000 - 0x000007fefe39e000 	C:\windows\system32\IMM32.DLL
+0x000007feff600000 - 0x000007feff709000 	C:\windows\system32\MSCTF.dll
+0x0000000062b60000 - 0x0000000062c32000 	C:\Program Files\Java\jre1.8.0_131\bin\msvcr100.dll
+0x0000000074590000 - 0x0000000074e2c000 	C:\Program Files\Java\jre1.8.0_131\bin\server\jvm.dll
+0x000007fef6470000 - 0x000007fef6479000 	C:\windows\system32\WSOCK32.dll
+0x000007feff790000 - 0x000007feff7dd000 	C:\windows\system32\WS2_32.dll
+0x000007fefe590000 - 0x000007fefe598000 	C:\windows\system32\NSI.dll
+0x000007fef9130000 - 0x000007fef916b000 	C:\windows\system32\WINMM.dll
+0x000007fefc690000 - 0x000007fefc69c000 	C:\windows\system32\VERSION.dll
+0x0000000077c30000 - 0x0000000077c37000 	C:\windows\system32\PSAPI.DLL
+0x0000000074580000 - 0x000000007458f000 	C:\Program Files\Java\jre1.8.0_131\bin\verify.dll
+0x0000000074550000 - 0x0000000074579000 	C:\Program Files\Java\jre1.8.0_131\bin\java.dll
+0x0000000074530000 - 0x0000000074546000 	C:\Program Files\Java\jre1.8.0_131\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1256 
+java_command: mhg.searchf
+java_class_path (initial): C:\Users\Mohammad\workspace\mhh\bin;C:\Users\Mohammad\Desktop\mysql-connector-java-5.1.42-bin.jar;C:\Users\Mohammad\workspace\mhh\jcalendar-1.4.jar;C:\Users\Mohammad\workspace\mhh\miglayout15-swing.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;C:\Users\Mohammad\Downloads\some shit\eclipse;
+USERNAME=Mohammad
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.23796)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 61 stepping 4, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8297840k(1541820k free), swap 10417088k(5396k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.131-b11) for windows-amd64 JRE (1.8.0_131-b11), built on Mar 15 2017 01:23:53 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun May 21 17:31:19 2017
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
